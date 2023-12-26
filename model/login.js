@@ -5,7 +5,6 @@ const loginSchema = new Schema({
   emailOrcontact: {
     type: String,
     required: [true, "Password Is Required"],
-    unique: true,
   },
   password: {
     type: String,
