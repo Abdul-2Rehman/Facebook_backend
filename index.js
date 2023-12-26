@@ -10,6 +10,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", login);
 
+app.get("/", (req, res) => {
+  res.send("Hello, this is your API!");
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   DbConnection();
