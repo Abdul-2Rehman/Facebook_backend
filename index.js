@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/api", login);
 
 app.get("/", (req, res) => {
-  res.send("Hello, this is your API!");
+  res.send("Facebook Clone Backend Api Is Connected Successfully");
 });
 
 const PORT = process.env.PORT || 3000;
